@@ -1,7 +1,7 @@
 'use client'
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Mesh,Group } from 'three';
 
 function RobotHead() {
@@ -53,7 +53,7 @@ function RobotHead() {
 
 export default function RobotHeader() {
     return (
-        <div className="h-[40vh] w-[40vw] right-[0] opacity-100">
+        <div className="fixed h-[40vh] w-[40vw] right-[0] top-[30%] opacity-100">
             <Canvas camera={{position: [0,0,5]}}>
                 <ambientLight intensity={0.5}/>
                 <directionalLight position={[5,5,5]} intensity={1}/>

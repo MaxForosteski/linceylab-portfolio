@@ -13,12 +13,12 @@ function Shape({ geometryType, color, position }: ShapeProps) {
     const meshRef = useRef<THREE.Mesh>(null);
     const [hovered, setHovered] = useState(false);
 
-    useFrame(({ pointer }) => {
+    useFrame(() => {
         if (meshRef.current) {
-            meshRef.current.rotation.x += 0.01
-            meshRef.current.rotation.y += 0.01
-            meshRef.current.position.x += pointer.x * 0.0005
-            meshRef.current.position.y += pointer.y * 0.0005
+            meshRef.current.rotation.x += 0.001
+            meshRef.current.rotation.y += 0.001
+            meshRef.current.position.x += 1 * 0.0005
+            meshRef.current.position.y += 1 * 0.0005
         }
     });
 
@@ -51,6 +51,12 @@ function Shape({ geometryType, color, position }: ShapeProps) {
                         {material}
                     </Cone>
                 );
+            case "torus":
+                return (
+                    <Torus {...props} args={[0.4, 0.15, 16, 50]}>
+                        {material}
+                    </Torus>
+                );
             default:
                 return (
                     <Box {...props} args={[0.4, 0.4, 0.4]}>
@@ -65,11 +71,11 @@ function Shape({ geometryType, color, position }: ShapeProps) {
 
 export default function HeaderBackground() {
     const shapes = useMemo(() => {
-        const geometries = ["box", "sphere", "cone"];
+        const geometries = ["box", "sphere", "cone","torus"];
 
-        return Array.from({ length: 30 }, (_, i) => ({
+        return Array.from({ length: 30 }, () => ({
             geometryType: geometries[Math.floor(Math.random() * geometries.length)],
-            color: `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`,
+            color: `#e1e1ff`,
             position: [
                 (Math.random() - 0.5) * 10,
                 (Math.random() - 0.5) * 10,
