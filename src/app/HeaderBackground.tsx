@@ -85,7 +85,7 @@ export default function HeaderBackground() {
     }, []);
 
     return (
-        <div className="fixed inset-0 z-0 bg-linear-to-t from-blue-600 to-black">
+        <div className="absolute inset-0 z-0 bg-linear-to-t from-blue-600 to-black">
             <Canvas camera={{ position: [0, 0, 5]}}>
                 <ambientLight intensity={0.8} />
                 {shapes.map((shape, i) => (
