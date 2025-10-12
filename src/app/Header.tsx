@@ -7,11 +7,11 @@ import CtaButton from "@/components/CtaButton";
 
 export default function Header() {
     return (
-        <>
+        <div className="relative h-[93vh]">
             <HeaderBackground />
-            <div className="fixed inset-0 z-0 bg-blue-700 opacity-50"></div>
+            <div className="absolute inset-0 z-0 bg-blue-700 opacity-50"></div>
 
-            <div className="fixed inset-0 z-10 flex flex-col justify-between h-screen">
+            <div className="relative z-10 flex flex-col justify-between h-full">
                 <div className="flex justify-center pt-[5%]">  
                     <Image
                         src={'/logo-completa.png'}
@@ -21,7 +21,7 @@ export default function Header() {
                         style={{borderRadius : 100 + "px"}}
                     />
                 </div>
-                <div className="flex items-center justify-center h-full">
+                <div className="flex items-center justify-center flex-1">
                     <Typer />
                 </div>
 
@@ -29,6 +29,6 @@ export default function Header() {
                     <CtaButton text="Solicite seu orçamento agora mesmo" />    
                 </div>
             </div>
-        </>
+        </div>
     );
 }
