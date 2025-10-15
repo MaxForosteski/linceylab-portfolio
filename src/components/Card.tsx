@@ -60,10 +60,10 @@ export default function Card({ title, urlImage, description, mainLink, mentions,
 
 
                             <div className="pl-10">
-                                <h2 className="text-3xl text-black font-bold mb-2">{title}</h2>
-                                <h3 className="text-2xl font-light text-black mb-5 mt-3">{business}</h3>
-                                <p className="text-gray-700 mb-4 text-black text-justify">{description}</p>
-                                <p>
+                                <h2 className="text-3xl font-display text-black font-bold mb-2">{title}</h2>
+                                <h3 className="text-2xl font-display font-light text-black mb-5 mt-3">{business}</h3>
+                                <p className="text-gray-700 font-sans mb-4 text-black text-justify">{description}</p>
+                                <p className="text-black font-display">
                                     Link:
                                     {mainLink ? (<a
                                         href={mainLink}
@@ -76,9 +76,9 @@ export default function Card({ title, urlImage, description, mainLink, mentions,
 
 
                                 {mentions && mentions.length > 0 && (
-                                    <div className="mt-4">
-                                        <h3 className="text-lg font-semibold mb-2">Menções:</h3>
-                                        <ul className="list-disc pl-5 text-gray-600">
+                                    <div className="mt-4 font-display">
+                                        <h3 className="text-lg text-black font-semibold mb-2">Menções:</h3>
+                                        <ul className="list-disc pl-5 text-gray-600 ">
                                             {mentions.map((link, i) => (
                                                 <li key={i}>
                                                     <a href={link} target="_blank" className="hover:underline">
