@@ -2,6 +2,7 @@ import Header from "./Header";
 import About from "./About";
 import Projects from "./Projects";
 import Contributes from "./Contributes";
+import Services from "./Services";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <About/>
       <Projects />
       <Contributes />
+      <Services />
     </div>
   );
 }
