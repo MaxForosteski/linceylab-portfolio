@@ -31,6 +31,7 @@ export default function RootLayout({
         className={`${montserrat.variable} ${manrope.variable} antialiased`}
       >
         { children }
+        <Analytics />
       </body>
     </html>
   );
