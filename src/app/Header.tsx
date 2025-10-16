@@ -16,6 +16,8 @@ export default function Header() {
                     <Image
                         src={'/logo-completa.png'}
                         alt="Logo Lincey Lab completa"
+                        priority
+                        fetchPriority="high"
                         width={500}
                         height={500}
                         style={{borderRadius : 100 + "px"}}

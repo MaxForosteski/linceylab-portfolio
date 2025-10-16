@@ -9,7 +9,7 @@ import HabilitiesList from "@/components/HabilitiesList";
 import CtaButton from "@/components/CtaButton";
 
 export default function Habilities() {
-    const [hability, setHability] = useState<string>("");
+    const [hability, setHability] = useState<string>("Linguagens");
 
     return (
         <SectionDiv bgIsBlue={false}>

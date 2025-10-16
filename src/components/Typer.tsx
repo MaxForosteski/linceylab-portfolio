@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 
 export default function Typer() {
     return (
-        <div className="font-display text-white text-5xl font-bold p-5 max-w-[70vw]">
+        <div className="font-display text-white text-3xl font-bold p-5 max-w-[70vw]">
             &gt;
             <ReactTyped
                 strings={[

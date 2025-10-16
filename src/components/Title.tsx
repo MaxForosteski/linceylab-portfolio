@@ -4,6 +4,6 @@ type titleProps = {
 
 export default function Title({ text }: titleProps) {
     return (
-        <h1 className="text-6xl font-display font-medium pb-[50px]">{text}</h1>
+        <h1 className="text-5xl font-display font-medium pb-[50px]">{text}</h1>
     );
 }
