@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${montserrat.variable} ${manrope.variable} antialiased`}
       >
-        {children}
+        { children }
       </body>
     </html>
   );
