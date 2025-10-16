@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next"
 import { Montserrat, Manrope } from "next/font/google";
 import "./globals.css";
 
