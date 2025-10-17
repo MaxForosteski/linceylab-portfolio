@@ -71,7 +71,7 @@ function Shape({ geometryType, color, position }: ShapeProps) {
 
 export default function HeaderBackground() {
     const shapes = useMemo(() => {
-        const geometries = ["box", "sphere", "cone","torus"];
+        const geometries = ["box", "sphere", "cone", "torus"];
 
         return Array.from({ length: 30 }, () => ({
             geometryType: geometries[Math.floor(Math.random() * geometries.length)],
@@ -86,7 +86,12 @@ export default function HeaderBackground() {
 
     return (
         <div className="absolute inset-0 z-0 bg-linear-to-t from-blue-600 to-black">
-            <Canvas camera={{ position: [0, 0, 5]}}>
+            <Canvas
+                camera={{ position: [0, 0, 5] }}
+                dpr={[1, 1.5]}
+                gl={{ powerPreference: "low-power", antialias: false }}
+            >
+
                 <ambientLight intensity={0.8} />
                 {shapes.map((shape, i) => (
                     <Shape key={i} {...shape} />

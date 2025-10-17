@@ -6,7 +6,7 @@ type SectionBodyProps = {
 
 export default function SectionBody({ children }: SectionBodyProps) {
     return(
-        <div className="flex flex-row ml-[70px] mr-[70px]">
+        <div className="flex flex-row xl:mx-[70px]">
             { children }
         </div>
     );

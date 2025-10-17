@@ -12,7 +12,7 @@ export default function CtaButton({ text }: CtaButtonProps) {
             aria-label="Entrar em contato com Max Forosteski pelo Whatsapp"
         >
             <div className="flex justify-center items-center text-3xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl"><FaWhatsapp /></div>
-            <p className="font-display flex justify-center text-justify items-center ml-[5px] sm:text-sm md:text-md lg:text-lg xl:text-lg 2xl:text-lg">{text}</p>
+            <p className="font-display flex justify-center text-center items-center ml-[5px] sm:text-sm md:text-md lg:text-lg xl:text-lg 2xl:text-lg">{text}</p>
         </a>
     );
 }
