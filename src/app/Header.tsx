@@ -7,7 +7,7 @@ import CtaButton from "@/components/CtaButton";
 
 export default function Header() {
     return (
-        <div className="relative h-[93vh] sm:h-[91vh] md:h-[91vh] lg:h-[91vh] xl:h-[92vh] 2xl:h-[95vh]">
+        <div className="relative h-[93vh] sm:h-[91vh] md:h-[91vh] lg:h-[91vh] xl:h-[92vh] 2xl:h-[95vh]" id="hero">
             <HeaderBackground />
             <div className="absolute inset-0 z-0 bg-blue-700 opacity-50"></div>
 

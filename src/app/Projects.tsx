@@ -7,7 +7,7 @@ import CardList from "@/components/CardList";
 
 export default function Projects() {
     return (
-        <SectionDiv bgIsBlue={true}>
+        <SectionDiv bgIsBlue={true} id="projects">
             <Title text="Projetos" />
             <SectionBody>
                 <CardList>
