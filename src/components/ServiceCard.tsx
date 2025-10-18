@@ -7,7 +7,7 @@ type ServiceCardProps = {
 }
 export default function ServiceCard({ title, description, urlImage}: ServiceCardProps ) {
     return(
-        <div className="flex justify-center items-center flex-col bg-white text-black p-5 rounded-xl">
+        <div className="flex justify-center items-center flex-col bg-white text-black p-5 mx-5 rounded-xl">
             <Image 
                 src={urlImage}
                 alt={title}

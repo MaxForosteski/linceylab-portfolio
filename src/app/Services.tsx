@@ -38,7 +38,7 @@ export default function Services() {
                     />
                 </CardList>
             </SectionBody>
-            <div className="flex justify-center mt-[50px]">
+            <div className="flex justify-center my-[50px]">
                 <CtaButton text="Deseja acelerar seus processos com Inteligencia Artificial? Entre em contato!"/>
             </div>
         </SectionDiv>

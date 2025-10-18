@@ -12,7 +12,7 @@ export default function Projects() {
             <SectionBody>
                 <CardList>
                     <Card 
-                        title="Sadraque Auto Center - Landing Page" 
+                        title="Landing Page" 
                         business="Sadraque Auto Center"
                         urlImage="/Sadraque-logo.png" 
                         description="Landing page desenvolvida com o objetivo de fortalecer a presença digital e atrair novos clientes locais. O projeto foi planejado para transmitir credibilidade, modernizar a imagem da oficina e facilitar o contato com os clientes por meio de uma estrutura leve, responsiva e otimizada para buscas locais."
@@ -45,7 +45,7 @@ export default function Projects() {
                     />
                 </CardList>
             </SectionBody>
-            <div className="flex justify-center mt-[50px]">
+            <div className="flex justify-center my-[50px]">
                 <CtaButton text="Deseja tirar aquele projeto do papel, faça agora seu orçamento gratuito!" />
             </div>
         </SectionDiv>
