@@ -13,7 +13,7 @@ export default function Habilities() {
     const [hability, setHability] = useState<string>("Linguagens");
 
     return (
-        <SectionDiv bgIsBlue={false}>
+        <SectionDiv bgIsBlue={false} id="habilities">
             <Title text="Habilidades" />
             <SectionBody>
                 <div className="flex flex-col">

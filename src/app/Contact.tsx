@@ -9,7 +9,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 
 export default function Contact() {
     return (
-        <SectionDiv bgIsBlue={true}>
+        <SectionDiv bgIsBlue={true} id="contact">
             <Title text="Contatos" />
             <SectionBody>
                 <div className="flex flex-col w-full items-center">

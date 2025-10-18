@@ -7,7 +7,7 @@ import CtaButton from "@/components/CtaButton";
 
 export default function Contributes() {
     return (
-        <SectionDiv bgIsBlue={false}>
+        <SectionDiv bgIsBlue={false} id="contributes">
             <Title text="Contribuições e Manutenções" />
             <SectionBody>
                 <CardList>

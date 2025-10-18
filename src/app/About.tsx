@@ -6,7 +6,7 @@ import SectionBody from "@/components/SectionBody";
 
 export default function About() {
     return (
-        <SectionDiv bgIsBlue={false}>
+        <SectionDiv bgIsBlue={false} id="about">
             <Title text="Sobre mim" />
             <SectionBody>
                 <div className=" flex flex-col lg:flex-row justify-center items-center">

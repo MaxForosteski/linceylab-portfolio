@@ -7,7 +7,7 @@ import CtaButton from "@/components/CtaButton";
 
 export default function Services() {
     return (
-        <SectionDiv bgIsBlue={true}>
+        <SectionDiv bgIsBlue={true} id="services">
             <Title text="Serviços Prestados"/>
             <SectionBody>
                 <CardList>
