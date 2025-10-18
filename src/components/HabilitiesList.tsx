@@ -9,7 +9,7 @@ import { FaJava } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import { RiNextjsFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { FaAngular } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
@@ -55,13 +55,13 @@ export default function HabilitiesList({ category }: HabilitiesListProps) {
                     { title: "Three.js", icon: <FaCode /> },
                     { title: "Angular", icon:<FaAngular /> },
                     { title: "Styled Components", icon: <SiStyledcomponents />},
-                    { title: "Tailwind CSS", icon: <SiStyledcomponents />}
+                    { title: "Tailwind CSS", icon: <RiTailwindCssFill />}
                 ]);
                 break;
             case "Ferramentas":
                 setHabilitiesList([
                     { title: "Git", icon: <FaGitAlt /> },
-                    { title: "Inteligencia Artificial", icon: <LuBrainCircuit /> },
+                    { title: "IA", icon: <LuBrainCircuit /> },
                     { title: "Docker", icon: <FaDocker /> },
                     { title: "Postman", icon: <SiPostman /> },
                     { title: "Linux", icon: <FaLinux />}
@@ -89,7 +89,7 @@ export default function HabilitiesList({ category }: HabilitiesListProps) {
     }, [category]);
 
     return (
-        <div className="flex flex-row justify-start">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-5 justify-items-center 2xl:flex 2xl:flex-row 2xl:justify-start">
             {habilitiesList.map((hability, index) => (
                 <HabilityCard key={index} title={hability.title} icon={hability.icon} />
             ))}
